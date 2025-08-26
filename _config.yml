@@ -1,35 +1,58 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# This config file is meant for settings that affect your entire site.
 
-# Site settings
-title: Shivangi Ambardar
-email: sambar3@illinois.edu
-description: Shivangi Ambardar UIUC Economics
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ambardars.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username: 
-linkedin_username: 
-scholar_username: 
-orcid_username: 
+# Theme Settings
+remote_theme            : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin   : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Google Analytics
-google_analytics:
+# Site Settings
+locale                  : "en-US"
+title                   : "Shivangi Ambardar"
+title_separator         : "-"
+name                    : "Shivangi Ambardar"
+description             : "PhD Candidate in Economics at the University of Illinois Urbana-Champaign."
+url                     : "https://ambardars.github.io"
+repository              : "ambardars/ambardars.github.io"
+
+# Analytics
+analytics:
+  provider              : "google-gtag" 
+  google:
+    tracking_id         : 
+
+# Site Author
+author:
+  name                  : "Shivangi Ambardar"
+  avatar                : "/assets/images/bio-photo.jpg" # path of avatar image
+  bio                   : "PhD student in Economics at UIUC. Outside of academia, I enjoy the focus and discipline of flying sailplanes. ✈️"
+  location              : "Urbana, Illinois"
+  email                 : "sambar3@illinois.edu"
+  links:
+    - label             : "Email"
+      icon              : "fas fa-fw fa-envelope-square"
+      url               : "mailto:sambar3@illinois.edu"
 
 
-# Build settings
-markdown: kramdown
-theme: minima
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
+# Plugins
 plugins:
-  - jekyll-feed
+  - jekyll-paginate
   - jekyll-sitemap
-
-# Extras
-mathjax: true
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
