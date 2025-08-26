@@ -19,7 +19,7 @@ repository              : "ambardars/ambardars.github.io"
 analytics:
   provider              : "google-gtag" 
   google:
-    tracking_id         : 
+    tracking_id         : "G-0DDL94YS6K"
 
 # Site Author
 author:
